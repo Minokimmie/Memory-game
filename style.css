@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+h1 {
+    color: #e63946;
+}
+
+#game {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.card {
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.card:hover {
+    background-color: #2980b9;
+}
+
+.card.matched {
+    background-color: #2ecc71;
+    cursor: default;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e63946;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c92a36;
+}
+
+#message {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media (max-width: 450px) {
+    .card {
+        height: 75px;
+    }
+
+    #game {
+        gap: 6px;
+    }
+}
